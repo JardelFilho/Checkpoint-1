@@ -68,10 +68,60 @@ h2  {
     padding: 15px;
 }
 .video-curiosidades{
-   
+    margin: 50px;
+    display: flex;
+    justify-content: center; 
 }
 .rodape {
     display: flex; 
     justify-content: space-around;
     background-color: lightslategray;
 } 
+
+@media(max-width: 425px) {
+
+    .cabeçalho {
+        
+        flex-direction: column;
+        gap: 12px;
+
+    }
+    .lista-menu-topo {
+
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+
+    }
+    .banner{
+
+        height: 250px;
+
+    }
+    .text-banner{
+
+        background-color: rgba(146, 121, 66, 0.753) ;
+        font-size:larger ;
+
+    }
+    .curiosidades{
+
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+
+    }
+    .video-curiosidades{
+
+        width: 80%;
+        align-items: center;
+
+    }
+    .rodape{
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
